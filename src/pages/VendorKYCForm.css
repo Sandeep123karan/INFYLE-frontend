@@ -1,0 +1,93 @@
+/* PAGE BACKGROUND */
+.kyc-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7fb, #e9f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.kyc-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* TITLE */
+.kyc-card h2 {
+  text-align: center;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.kyc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUT GROUP */
+.form-group label,
+.file-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* FILE INPUT */
+.file-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px dashed #9ca3af;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}
