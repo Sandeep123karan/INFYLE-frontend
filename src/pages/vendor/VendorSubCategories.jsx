@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:7002/api/vendor/subcategories";
-const CATEGORY_API = "http://localhost:7002/api/vendor/categories";
+const API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/subcategories";
+const CATEGORY_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/categories";
 
 export default function VendorSubCategories() {
   const [categories, setCategories] = useState([]);
@@ -198,7 +198,7 @@ export default function VendorSubCategories() {
               <td className="p-2">
                 {sub.image && (
                   <img
-                    src={`http://localhost:7002${sub.image}`}
+                    src={`https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app${sub.image}`}
                     alt={sub.name}
                     width="50"
                   />

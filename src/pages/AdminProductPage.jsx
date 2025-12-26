@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FiSearch, FiFilter, FiEdit2, FiTrash2, FiUpload, FiDownload, FiX, FiChevronLeft, FiChevronRight, FiPlus, FiEye, FiEyeOff } from "react-icons/fi";
 
-const API = axios.create({ baseURL: "http://localhost:7002/api/products" });
+const API = axios.create({ baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/products" });
 
 export default function AdminProductPage() {
   const [products, setProducts] = useState([]);
@@ -39,11 +39,11 @@ export default function AdminProductPage() {
   // Fetch categories & subcategories
   useEffect(() => {
     const fetchCategories = async () => {
-      const res = await axios.get("http://localhost:7002/api/categories");
+      const res = await axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/categories");
       setCategories(res.data);
     };
     const fetchSubCategories = async () => {
-      const res = await axios.get("http://localhost:7002/api/subcategories");
+      const res = await axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/subcategories");
       setSubCategories(res.data);
     };
     fetchCategories();
@@ -171,7 +171,7 @@ export default function AdminProductPage() {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      await axios.post("http://localhost:7002/api/products/import", formData);
+      await axios.post("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/products/import", formData);
       alert("CSV Imported Successfully!");
       fetchProducts();
     } catch (err) {

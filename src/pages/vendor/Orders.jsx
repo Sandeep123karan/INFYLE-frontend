@@ -3,7 +3,7 @@ import axios from "axios";
 
 /* ================= AXIOS INSTANCE ================= */
 const API = axios.create({
-  baseURL: "http://localhost:7002/api/vendor",
+  baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor",
 });
 
 API.interceptors.request.use((req) => {

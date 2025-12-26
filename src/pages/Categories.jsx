@@ -17,7 +17,7 @@ export default function Categories() {
   const fetchCategories = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:7002/api/categories");
+      const res = await axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/categories");
       setCategories(res.data);
     } catch (err) {
       console.error(err);
@@ -43,12 +43,12 @@ export default function Categories() {
     try {
       if (editId) {
         await axios.put(
-          `http://localhost:7002/api/categories/${editId}`,
+          `https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/categories/${editId}`,
           formData
         );
         setEditId(null);
       } else {
-        await axios.post("http://localhost:7002/api/categories", formData);
+        await axios.post("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/categories", formData);
       }
 
       // Clear form
@@ -75,7 +75,7 @@ export default function Categories() {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this category?")) {
       try {
-        await axios.delete(`http://localhost:7002/api/categories/${id}`);
+        await axios.delete(`https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/categories/${id}`);
         fetchCategories();
       } catch (error) {
         console.error(error);

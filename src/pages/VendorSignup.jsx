@@ -7,8 +7,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import logo from "../assets/2.png"; // <- correct path to your logo
 
-const LOGIN_API = "http://localhost:7002/api/vendor/login";
-const SIGNUP_API = "http://localhost:7002/api/vendor/signup";
+const LOGIN_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/login";
+const SIGNUP_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/signup";
 
 export default function VendorAuth() {
   const [mode, setMode] = useState("login"); // login | signup

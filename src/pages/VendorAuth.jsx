@@ -2,8 +2,8 @@
 // import axios from "axios";
 // import logo from "../assets/2.png";
 
-// const LOGIN_API = "http://localhost:7002/api/vendor/login";
-// const SIGNUP_API = "http://localhost:7002/api/vendor/signup";
+// const LOGIN_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/login";
+// const SIGNUP_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/signup";
 
 // export default function VendorAuth() {
 //   const [mode, setMode] = useState("login"); // login | signup
@@ -127,8 +127,8 @@ import axios from "axios";
 import logo from "../assets/2.png";
 // import logo from "../../assets/logo.png";
 
-const LOGIN_API = "http://localhost:7002/api/vendor/login";
-const SIGNUP_API = "http://localhost:7002/api/vendor/signup";
+const LOGIN_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/login";
+const SIGNUP_API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/signup";
 
 export default function VendorAuth() {
   const [mode, setMode] = useState("login");

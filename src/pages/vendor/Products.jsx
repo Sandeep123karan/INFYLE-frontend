@@ -12,7 +12,7 @@
 
 // /* ================= AXIOS INSTANCE ================= */
 // const API = axios.create({
-//   baseURL: "http://localhost:7002/api/vendor/products",
+//   baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/products",
 // });
 
 // API.interceptors.request.use((req) => {
@@ -51,10 +51,10 @@
 
 //   /* ================= FETCH CATEGORIES ================= */
 //   useEffect(() => {
-//     axios.get("http://localhost:7002/api/vendor/categories").then((res) => {
+//     axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/categories").then((res) => {
 //       setCategories(res.data);
 //     });
-//     axios.get("http://localhost:7002/api/vendor/subcategories").then((res) => {
+//     axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/subcategories").then((res) => {
 //       setSubCategories(res.data);
 //     });
 //   }, []);
@@ -293,7 +293,7 @@
 
 // /* ================= AXIOS INSTANCE ================= */
 // const API = axios.create({
-//   baseURL: "http://localhost:7002/api/vendor/products",
+//   baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/products",
 // });
 
 // API.interceptors.request.use((req) => {
@@ -335,13 +335,13 @@
 //     const token = localStorage.getItem("vendorToken");
 
 //     axios
-//       .get("http://localhost:7002/api/vendor/categories", {
+//       .get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/categories", {
 //         headers: { Authorization: `Bearer ${token}` },
 //       })
 //       .then((res) => setCategories(res.data));
 
 //     axios
-//       .get("http://localhost:7002/api/vendor/subcategories", {
+//       .get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/subcategories", {
 //         headers: { Authorization: `Bearer ${token}` },
 //       })
 //       .then((res) => setAllSubCategories(res.data));
@@ -604,7 +604,7 @@ import {
 
 /* ================= AXIOS INSTANCE ================= */
 const API = axios.create({
-  baseURL: "http://localhost:7002/api/vendor/products",
+  baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/products",
 });
 
 API.interceptors.request.use((req) => {
@@ -644,7 +644,7 @@ export default function VendorProducts() {
   const fetchCategories = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:7002/api/vendor/categories",
+        "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/categories",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -670,7 +670,7 @@ export default function VendorProducts() {
 
     try {
       const res = await axios.get(
-        `http://localhost:7002/api/vendor/subcategories?category=${catId}`,
+        `https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/subcategories?category=${catId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -747,7 +747,7 @@ export default function VendorProducts() {
 
     try {
       const res = await axios.get(
-        `http://localhost:7002/api/vendor/subcategories?category=${p.category?._id}`,
+        `https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/subcategories?category=${p.category?._id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

@@ -16,7 +16,7 @@
 //   const submit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const res = await axios.post("http://localhost:7002/api/vendor/login", { email, password });
+//       const res = await axios.post("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/login", { email, password });
 //       localStorage.setItem("vendorToken", res.data.token);
 //       window.location.href = "/vendor/profile-setup";
 //     } catch (err) {
@@ -154,7 +154,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import logo from "../assets/2.png";
 
-const API = "http://localhost:7002/api/vendor/login";
+const API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/login";
 
 export default function VendorLogin() {
   const [email, setEmail] = useState("");

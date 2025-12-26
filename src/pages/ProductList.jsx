@@ -8,7 +8,7 @@ import "../pages/ProductList.css";
 
 
 
-const API = axios.create({ baseURL: "http://localhost:7002/products" });
+const API = axios.create({ baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/products" });
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -43,8 +43,8 @@ export default function ProductList() {
   // Load Categories + SubCategories
   useEffect(() => {
     const fetchData = async () => {
-      const c1 = await axios.get("http://localhost:7002/api/categories");
-      const c2 = await axios.get("http://localhost:7002/api/subcategories");
+      const c1 = await axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/categories");
+      const c2 = await axios.get("https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/subcategories");
       setCategories(c1.data);
       setSubCategories(c2.data);
     };

@@ -15,7 +15,7 @@ export default function VendorCategories() {
   const token = localStorage.getItem("vendorToken");
 
   const api = axios.create({
-    baseURL: "http://localhost:7002/api/vendor/categories",
+    baseURL: "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor/categories",
     headers: {
       Authorization: `Bearer ${token}`
     }

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Vendors.css";
 
-const API = "http://localhost:7002/api/vendor";
+const API = "https://infyle-backend-5p8ajk8ku-sandeeps-projects-c6e2eb71.vercel.app/api/vendor";
 
 export default function Vendors() {
   const [vendors, setVendors] = useState([]);
