@@ -8,7 +8,7 @@ export default function OrderHistory() {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.get("https://server-amber-beta-38.vercel.app/api/orders/history/all");
+      const res = await axios.get("https://infyle-server.vercel.app/api/orders/history/all");
       setHistory(res.data);
     } catch (error) {
       console.log(error);
@@ -48,7 +48,7 @@ export default function OrderHistory() {
     formData.append("file", file);
 
     try {
-      await axios.post("https://server-amber-beta-38.vercel.app/api/orders/import", formData);
+      await axios.post("https://infyle-server.vercel.app/api/orders/import", formData);
       alert("Import Successful!");
       fetchHistory();
     } catch (err) {

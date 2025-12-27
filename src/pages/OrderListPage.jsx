@@ -3,7 +3,7 @@
 // import "./OrderListPage.css";
 
 // const API = axios.create({
-//   baseURL: "https://server-amber-beta-38.vercel.app/api",
+//   baseURL: "https://infyle-server.vercel.app/api",
 // });
 
 // export default function OrderListPage() {
@@ -102,7 +102,7 @@ import axios from "axios";
 import "./OrderListPage.css";
 
 const API = axios.create({
-  baseURL: "https://server-amber-beta-38.vercel.app/api",
+  baseURL: "https://infyle-server.vercel.app/api",
 });
 
 export default function OrderListPage() {

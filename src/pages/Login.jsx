@@ -12,7 +12,7 @@ export default function Login() {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post( "https://server-amber-beta-38.vercel.app/api/auth/login", {
+      const res = await axios.post( "https://infyle-server.vercel.app/api/auth/login", {
         email,
         password,
       });

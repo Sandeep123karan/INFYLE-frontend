@@ -15,7 +15,7 @@ export default function SubCategories() {
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get("https://server-amber-beta-38.vercel.app/api/categories");
+      const res = await axios.get("https://infyle-server.vercel.app/api/categories");
       setCategories(res.data);
     } catch (err) {
       console.error(err);
@@ -24,7 +24,7 @@ export default function SubCategories() {
 
   const fetchSubcategories = async () => {
     try {
-      const res = await axios.get("https://server-amber-beta-38.vercel.app/api/subcategories");
+      const res = await axios.get("https://infyle-server.vercel.app/api/subcategories");
       setSubcategories(res.data);
     } catch (err) {
       console.error(err);
@@ -48,13 +48,13 @@ export default function SubCategories() {
     try {
       if (editId) {
         await axios.put(
-          `https://server-amber-beta-38.vercel.app/api/subcategories/${editId}`,
+          `https://infyle-server.vercel.app/api/subcategories/${editId}`,
           formData,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
         setEditId(null);
       } else {
-        await axios.post("https://server-amber-beta-38.vercel.app/api/subcategories", formData, {
+        await axios.post("https://infyle-server.vercel.app/api/subcategories", formData, {
           headers: { "Content-Type": "multipart/form-data" }
         });
       }
@@ -79,7 +79,7 @@ export default function SubCategories() {
 
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure?")) {
-      await axios.delete(`https://server-amber-beta-38.vercel.app/api/subcategories/${id}`);
+      await axios.delete(`https://infyle-server.vercel.app/api/subcategories/${id}`);
       fetchSubcategories();
     }
   };
@@ -141,7 +141,7 @@ export default function SubCategories() {
               <td>{sub.parent?.name}</td>
               <td>
                 {sub.image && (
-                  <img src={`https://server-amber-beta-38.vercel.app${sub.image}`} alt={sub.name} width="50" />
+                  <img src={`https://infyle-server.vercel.app${sub.image}`} alt={sub.name} width="50" />
                 )}
               </td>
               <td>

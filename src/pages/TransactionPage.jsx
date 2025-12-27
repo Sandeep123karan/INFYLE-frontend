@@ -45,7 +45,7 @@ export default function TransactionPage() {
     try {
       // Create order request
       const orderRes = await axios.post(
-        "https://server-amber-beta-38.vercel.app/api/payment/create-order",
+        "https://infyle-server.vercel.app/api/payment/create-order",
         { name, email, amount }
       );
 
@@ -66,7 +66,7 @@ export default function TransactionPage() {
 
         handler: async function (response) {
           const verifyRes = await axios.post(
-            "https://server-amber-beta-38.vercel.app/api/payment/verify-payment",
+            "https://infyle-server.vercel.app/api/payment/verify-payment",
             {
               razorpay_order_id: response.razorpay_order_id,
               razorpay_payment_id: response.razorpay_payment_id,

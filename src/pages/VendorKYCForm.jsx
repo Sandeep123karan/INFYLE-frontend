@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API = "https://server-amber-beta-38.vercel.app/api/vendor";
+const API = "https://infyle-server.vercel.app/api/vendor";
 
 export default function VendorKYCForm() {
   const [step, setStep] = useState(1);

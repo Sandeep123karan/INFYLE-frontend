@@ -77,7 +77,7 @@
 
 //     try {
 //       const token = localStorage.getItem("vendorToken");
-//       await axios.post("https://server-amber-beta-38.vercel.app/api/vendor/update-profile", data, {
+//       await axios.post("https://infyle-server.vercel.app/api/vendor/update-profile", data, {
 //         headers: {
 //           "Content-Type": "multipart/form-data",
 //           Authorization: `Bearer ${token}`,
@@ -706,7 +706,7 @@ import {
   FiCheck
 } from "react-icons/fi";
 
-const API = "https://server-amber-beta-38.vercel.app/api/vendor";
+const API = "https://infyle-server.vercel.app/api/vendor";
 
 export default function VendorKYC() {
   const [step, setStep] = useState(1);

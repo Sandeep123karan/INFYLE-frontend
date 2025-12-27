@@ -13,7 +13,7 @@ export default function Signup() {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://server-amber-beta-38.vercel.app/api/auth/register", {
+      await axios.post("https://infyle-server.vercel.app/api/auth/register", {
         name,
         email,
         password,
@@ -249,7 +249,7 @@ export default function Signup() {
 //   const submit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       await axios.post("https://server-amber-beta-38.vercel.app/api/vendor/register", { name, email, password });
+//       await axios.post("https://infyle-server.vercel.app/api/vendor/register", { name, email, password });
 //       alert("Signup successful! Please login.");
 //       window.location.href = "/vendorlogin";
 //     } catch (err) {

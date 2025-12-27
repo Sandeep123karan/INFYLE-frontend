@@ -5,7 +5,7 @@
 // import React, { useEffect, useState } from "react";
 // import axios from "axios";
 
-// const API = "https://server-amber-beta-38.vercel.app/api";
+// const API = "https://infyle-server.vercel.app/api";
 
 // export default function VendorDashboard() {
 //   const [products, setProducts] = useState([]);
@@ -67,7 +67,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "https://server-amber-beta-38.vercel.app/api";
+const API = "https://infyle-server.vercel.app/api";
 
 export default function VendorDashboard() {
   const [products, setProducts] = useState([]);

@@ -14,7 +14,7 @@ export default function UserBox() {
       if (!token) return;
 
       try {
-        const res = await axios.get("https://server-amber-beta-38.vercel.app/api/auth/me", {
+        const res = await axios.get("https://infyle-server.vercel.app/api/auth/me", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data);

@@ -5,7 +5,7 @@ import axios from "axios";
 import "./AdminOrdersPage.css";
 
 const API = axios.create({
-  baseURL: "https://server-amber-beta-38.vercel.app/api",
+  baseURL: "https://infyle-server.vercel.app/api",
 });
 
 export default function AdminOrdersPage() {
